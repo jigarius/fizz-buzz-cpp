@@ -1,0 +1,10 @@
+name: fizz-buzz-cpp
+services:
+  main:
+    image: 'alpine:fizz-buzz-cpp'
+    container_name: fizz-buzz-cpp-main
+    build:
+      context: .
+      dockerfile: .docker/main/Dockerfile
+    volumes:
+      - .:/app
